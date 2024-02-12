@@ -14,6 +14,6 @@ class MainController extends Controller
         $movies = Movie::all();
         dd($movies);
 
-        return view('pages.index');
+        return view('pages.index', compact('movies'));
     }
 }
