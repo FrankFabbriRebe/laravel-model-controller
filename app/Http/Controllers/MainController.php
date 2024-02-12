@@ -12,7 +12,7 @@ class MainController extends Controller
     {
 
         $movies = Movie::all();
-        dd($movies);
+        // dd($movies);
 
         return view('pages.index', compact('movies'));
     }
